@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client MQTT Antifurto</title>
+	<style>
+		img.icona {
+ 	   		height: 2.5em;
+    		width: 2.5em;
+		}
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+		<div id="pagina"></div>
+		<br>
+		<div id="bbio">
+			SO_Lampeggiante <img id="SO_Lampeggiatore" class="icona" src="img/lampeggiatore_60_SO_Lampeggiatore.png"></img>
+			SO_Sirena <img id="SO_Sirena" class="icona" src="img/sirena_30_SO_Sirena.gif"></img><hr>
+			<br> 
+			SE_Pir1 <img id="SE_Pir1" class="icona" src="img/SE_Pir0.png"></img>
+			SE_Pir2 <img id="SE_Pir2" class="icona" src="img/SE_Pir0.png"></img>
+			SE_Pir3 <img id="SE_Pir3" class="icona" src="img/SE_Pir0.png"></img><hr>  
+			<br><br>
+			<button type="button" onclick="allarmaAll()">Allarma Tutte le zone</button>
+			<button type="button" onclick="disallarmaAll()">Disallarma Tutte le zone</button>
+		</div>
+		<script src="antifurto.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+		<script>start();</script>
+</body>
+</html>
